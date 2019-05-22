@@ -30,3 +30,19 @@ if(n==num):                                       #o/p:amma,amma is a palindrome
     print(num," is a palindrome")
 else:
     print(num," is not palindrome")
+    
+    #PY4 Amstrong number or not
+    
+num=int(input())
+sum=0
+temp=num
+while(temp>0):
+    d=temp%10                       #O/P=135,135 is Amstrong number;134 is not Amstrong number
+    sum+=d**3
+    temp=temp//10
+if(num==sum):
+    print(num," is a Amstrong number")
+else:
+    print(num," is not Amstrong number")
+    
+    
