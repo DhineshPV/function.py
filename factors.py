@@ -68,7 +68,7 @@ if(n==i*i):
 else:
     print(n," is not a perfect square number")
     
-   #py7_perfectSqr_2intervals
+   #py7_perfectSqr_2intervals  no.of.count
    
  def CountSquares(a, b): 
 
@@ -97,7 +97,38 @@ for i in range(1,n+1):
         break
 else:
     print(n," is not a power of two")
+
+#py9 no.of.sqrs between 2 interval
         
 
-  
-    
+def CountSquares(a, b): 
+
+	list=[]
+
+	 
+	for i in range (a, b + 1): 
+		j = 1; 
+		while j * j <= i: 
+			if j * j == i: 
+				list.append(i)
+			j = j + 1
+		i = i + 1
+	return list 
+a = 9
+b = 25
+print ("squares number are:", CountSquares(a, b) )
+
+#PY10 GCD
+import math
+a=int(input())
+b=int(input())
+s=math.gcd(a,b)
+print(s)
+
+#py11 LCM
+import math
+a=int(input())
+b=int(input())
+s=math.gcd(a,b)
+lcm=a*b//s
+print(lcm)
