@@ -17,3 +17,16 @@ while(num>0):             #o/p_1505=5051
     reverse=(reverse*10)+n
     num=num//10
 print(reverse)
+                    [OR]
+    num=input():
+    n=num[::-1]
+    print(n)
+    
+#py3 palindrome or not
+
+num=input()
+n=num[::-1]
+if(n==num):                                       #o/p:amma,amma is a palindrome;dhinesh,dhinesh is not palindrome
+    print(num," is a palindrome")
+else:
+    print(num," is not palindrome")
