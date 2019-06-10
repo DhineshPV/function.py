@@ -44,5 +44,22 @@ if(num==sum):
     print(num," is a Amstrong number")
 else:
     print(num," is not Amstrong number")
+ #amstrong between two interval
+num1=int(input())
+num2=int(input())
+for i in range(num1,num2+1):
+    order = len(str(i))
+    sum=0
+    temp=i
+    while(temp>0):
+        d=temp%10
+        sum+=d**order
+        temp=temp//10
+    if (i==sum):
+        print (i)
+
+    
+    
+    
     
     
