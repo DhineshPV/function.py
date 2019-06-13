@@ -58,7 +58,12 @@ for i in range(num1,num2+1):
     if (i==sum):
         print (i)
 
+    #BINARY TO DECIMAL
     
+    t=int(input())
+for _ in range(t):
+    n=input()
+    print(int(n,2))
     
     
     
